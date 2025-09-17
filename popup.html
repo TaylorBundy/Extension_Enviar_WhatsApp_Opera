@@ -7,14 +7,31 @@
     body {
       width: 220px; 
       font-family: sans-serif; 
-      padding: 10px;
-      /* overflow: hidden; */
-      left: 100px;
+      padding: 5px 10px;
+      display: grid;
+      justify-content: center;
+    }
+    .container {
+      display: grid;
+      /* gap: 10px; */
+      padding: 5px 10px;
+      box-shadow: 1px 1px 10px 0px rgb(30 190 90 / 75%);
+    }
+    h3 {
+      text-align: center;
+      /* box-shadow: 1px 1px 10px 0px rgb(30 190 90 / 75%); */
     }
     input {
-      width: 100%; 
+      /* width: 100%; */
       padding: 5px; 
       margin-bottom: 10px;
+      /* box-shadow: 1px 1px 10px 0px rgb(30 190 90 / 75%); */
+      border: 1.5px solid;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
     button {
       width: 100%; 
@@ -23,6 +40,8 @@
       color: white; 
       border: none; 
       cursor: pointer;
+      /* box-shadow: 1px 1px 10px 0px rgb(30 190 90 / 75%); */
+      border-radius: 10px;
     }
     button:hover {
       background: #1ebe5a;
@@ -30,9 +49,11 @@
   </style>
 </head>
 <body>
-  <h3>Enviar WhatsApp</h3>
-  <input type="text" id="numero" placeholder="Ej: 5491123456789">
-  <button id="enviar">Abrir WhatsApp</button>
+  <div class="container">
+    <h3>Enviar WhatsApp</h3>
+    <input type="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="numero" placeholder="Ej: 5491123456789" title="Ingrese el número al cual desea enviar el mensaje. Ej: 5491123456789">
+    <button id="enviar" title="Click para abrir pestaña y enviar mensaje.!">Abrir WhatsApp</button>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>

@@ -33,4 +33,9 @@ function abrirWhatsApp() {
         // Si presionamos Enter, llamamos a la función
         abrirWhatsApp();
     }
+    if (e.key === "Escape") {
+      // Si presionamos Enter, llamamos a la función
+      //abrirWhatsApp();
+      chrome.runtime.sendMessage({ action: "cerrarVentana" });
+    }
   });
