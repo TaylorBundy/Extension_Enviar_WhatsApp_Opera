@@ -1,6 +1,6 @@
 📥 WhatsApp Quick Send - Extensión para Opera
 
-![Icon](icon32x32.png)
+![Icon](icons/icon32x32.png)
 
 📍 **Descripción:**  
 WhatsApp Quick Send es una extensión para Opera que permite enviar mensajes a números de teléfono que no están guardados en tu agenda de contactos. La extensión abre automáticamente una pestaña de WhatsApp Web para el número especificado y realiza los clics necesarios para iniciar la conversación, agilizando el proceso de envío de mensajes.
@@ -18,7 +18,7 @@ WhatsApp Quick Send es una extensión para Opera que permite enviar mensajes a n
 
 👨‍🔧 **Instalación:**
 
-1. ![Icon](github.webp) Clona este repositorio o 📥 descarga el ZIP.
+1. ![Icon](icons/github.webp) Clona este repositorio o 📥 descarga el ZIP.
    ```bash
    git clone https://github.com/TaylorBundy/Extension_Enviar_WhatsApp_Opera.git
    ```
